@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray = [10, 20, 30, 40, 50]; 
+        document.write("Original Array: " + myArray + "<br>");
+        myArray.push(60);
+        document.write("Array after push(60): " + myArray + "<br>");
+        myArray.pop();
+        document.write("Array after pop(): " + myArray + "<br>");
+        myArray.shift();
+        document.write("Array after shift(): " + myArray + "<br>");
+        myArray.unshift(5);
+        document.write("Array after unshift(5): " + myArray + "<br>");
+        let index = myArray.indexOf(30);
+        document.write("Index of 30: " + index + "<br>");
+        myArray.splice(2, 1);
+        document.write("Array after splice(2, 1): " + myArray + "<br>");
+        let slicedArray = myArray.slice(1, 4);
+        document.write("Sliced Array (1,4): " + slicedArray + "<br>");
+        let joinedString = myArray.join(" - ");
+        document.write("Joined String: " + joinedString + "<br>");
+        myArray.sort((a, b) => a - b);
+        document.write("Sorted Array: " + myArray + "<br>");
+        myArray.reverse();
+        document.write("Reversed Array: " + myArray + "<br>");
+        let isAllAbove10 = myArray.every(num => num > 10);
+        document.write("Are all elements > 10? " + isAllAbove10 + "<br>");
+        let isSomeAbove30 = myArray.some(num => num > 30);  
+        document.write("Is any element > 30? " + isSomeAbove30 + "<br>");
+        let mappedArray = myArray.map(num => num * 2);
+        document.write("Mapped Array (num*2): " + mappedArray + "<br>");
+        let filteredArray = myArray.filter(num => num > 20);
+        document.write("Filtered Array (num>20): " + filteredArray + "<br>");
+        let sum = myArray.reduce((acc, num) => acc + num, 0);
+        
+    </script>
+</body>
+</html>

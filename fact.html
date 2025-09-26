@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Factorial</title>
+</head>
+<body>
+    <script>
+        function factorial(n) {
+            let res=1;
+            for (let i = 1; i <= n; i++) {
+                res *= i;
+            }
+            return res;
+        }
+       let num= prompt("Enter a number to find its factorial:");
+        let result= factorial(num);
+        document.write(`The factorial of ${num} is ${result}`);
+        
+    </script>
+</body>
+</html>
