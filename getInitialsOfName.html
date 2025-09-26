@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Initials of full name</title>
+</head>
+<body>
+    <script>
+        let fullNAme=["Samruddhi Rajendra Magdum","Soham Rajendra Magdum","Sangeeta Rajendra Magdum","Rajendra Dashrath Magdum"]
+        for(let i in fullNAme){
+            const initials=fullNAme.map(fullNAme=>fullNAme.split(" ").map(n=>n[0]).join("").toUpperCase())
+            document.write("Initials of " + fullNAme[i] + " is " + initials[i] + "<br>")     
+        }
+    </script>
+</body>
+</html>

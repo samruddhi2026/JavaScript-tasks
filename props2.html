@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Props Example</title>
+</head>
+<body>
+    <script>
+        function dispMessage(props){
+            document.write("Hi! " + props.name + "<br>");
+            let userName = prompt("Enter your name:");
+            document.write("Welcome, " + userName + "!");
+        }
+
+        // Call the function with props
+        dispMessage({name: "Samruddhi"});
+    </script>
+</body>
+</html>

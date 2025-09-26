@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Props(Properties)</title>
+</head>
+<body>
+    <script>
+
+// "Child component" as a function
+function Greeting(props) {
+  console.log("Hello, " + props.name + "!");
+}
+
+// "Parent component" calling the child with props
+function App() {
+  Greeting({ name: "Alice" });
+  Greeting({ name: "Bob" });
+}
+
+// Run App
+App();
+
+</script>
+</body>
+</html>
